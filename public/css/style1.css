@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #8A9CE3;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Style the content */
+.content {
+    background-color: #336C77;
+    padding: 10px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+    background-color: #8A9CE3;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(185, 192, 192);
+  }
+  
+  th {
+    text-align: left;
+    padding: 8px;
+    background-color:rgb(150, 155, 155);
+  }
+  td {
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+      background-color: #f2f2f2;
+ }
+
+  .btn {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .bt {
+      color: white;
+      font-size: 16px;
+      right: 20px;
+      top:50px;
+      position: absolute;
+  }
+
+  .
+  .success {background-color: #4CAF50;} /* Green */
+  .success:hover {background-color: #46a049;}
+
+  .infos {background-color: #4CAF50;} /* Blue */
+  .infos:hover {background: #46a049;}
+  
+  .info {background-color: #2196F3;} /* Blue */
+  .info:hover {background: #0b7dda;}
+  
+  .warning {background-color: #ff9800;} /* Orange */
+  .warning:hover {background: #e68a00;}
+  
+  .danger {background-color: #f44336;} /* Red */ 
+  .danger:hover {background: #da190b;}
+  
+  .default {background-color: #e7e7e7; color: black;} /* Gray */ 
+  .default:hover {background: #ddd;}
+
+  .back {
+      background-color: #721c24;
+  }
+
+
+  /* code pour popup */
+  /* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color:orangered;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.position {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #8A9CE3;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: #21177D;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #21177D;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #8A9CE3;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #21177D;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
